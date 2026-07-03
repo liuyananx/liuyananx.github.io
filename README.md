@@ -1,4 +1,4 @@
-﻿# My World
+# My World
 
 这是一个用于长期存放和发布个人内容的静态站点项目，基于 VitePress，使用方式和 VuePress 很接近。
 
