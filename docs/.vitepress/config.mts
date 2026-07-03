@@ -15,11 +15,12 @@ export default defineConfig({
     siteTitle: 'My World',
     nav: [
       { text: '首页', link: '/' },
+      { text: 'Now', link: '/now' },
+      { text: 'Things', link: '/things' },
+      { text: 'Notes', link: '/notes/' },
+      { text: 'Archive', link: '/archive' },
       { text: '关于', link: '/about' },
-      { text: '项目', link: '/projects' },
-      { text: '笔记', link: '/notes/' },
-      { text: '链接', link: '/links' },
-      { text: '联系', link: '/contact' }
+      { text: '链接', link: '/links' }
     ],
     sidebar: {
       '/notes/': [
@@ -35,7 +36,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/liuyananx/liuyananx.github.io' }
     ],
     footer: {
-      message: '记录想法、作品和生活。',
+      message: '一个不断变化的个人空间。',
       copyright: 'Copyright © 2026-present'
     },
     search: {
