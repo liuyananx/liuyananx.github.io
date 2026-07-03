@@ -4,24 +4,18 @@ export default defineConfig({
   title: 'My World',
   description: '我的个人空间',
   lang: 'zh-CN',
-  base: '/my-world/',
+  base: '/',
   cleanUrls: true,
   themeConfig: {
     logo: '/logo.svg',
     nav: [
       { text: '首页', link: '/' },
-      { text: '指南', link: '/guide/getting-started' },
-      { text: '笔记', link: '/notes/' }
+      { text: '关于', link: '/about' },
+      { text: '项目', link: '/projects' },
+      { text: '笔记', link: '/notes/' },
+      { text: '链接', link: '/links' }
     ],
     sidebar: {
-      '/guide/': [
-        {
-          text: '指南',
-          items: [
-            { text: '快速开始', link: '/guide/getting-started' }
-          ]
-        }
-      ],
       '/notes/': [
         {
           text: '笔记',
@@ -32,7 +26,7 @@ export default defineConfig({
       ]
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/liuyananx/my-world' }
+      { icon: 'github', link: 'https://github.com/liuyananx/liuyananx.github.io' }
     ],
     footer: {
       message: 'Built with VitePress',

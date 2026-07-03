@@ -4,21 +4,21 @@ layout: home
 hero:
   name: My World
   text: 我的个人空间
-  tagline: 记录文档、想法、作品和长期沉淀的内容。
+  tagline: 记录想法、作品、笔记和正在发生的生活。
   actions:
     - theme: brand
-      text: 开始阅读
-      link: /guide/getting-started
+      text: 了解我
+      link: /about
     - theme: alt
-      text: 查看笔记
-      link: /notes/
+      text: 查看项目
+      link: /projects
 
 features:
-  - title: Markdown 写作
-    details: 使用 Markdown 管理内容，适合文章、教程、知识库和项目文档。
-  - title: 类 VuePress 体验
-    details: 配置导航、侧边栏、首页和静态站点构建，整体体验接近 VuePress。
-  - title: 易部署
-    details: 构建后可发布到 GitHub Pages、Netlify、Vercel 或任意静态托管服务。
+  - title: 关于我
+    details: 放一段个人介绍、技能方向、正在关注的事情，让朋友快速了解你。
+  - title: 我的项目
+    details: 展示你做过的项目、作品、Demo 或者长期想维护的内容集合。
+  - title: 笔记与文章
+    details: 沉淀技术笔记、学习记录、想法随笔，慢慢搭建自己的知识主页。
 ---
 
