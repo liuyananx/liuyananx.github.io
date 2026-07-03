@@ -1,10 +1,10 @@
 ﻿import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'My Docs',
-  description: '我的个人文档库',
+  title: 'My World',
+  description: '我的个人空间',
   lang: 'zh-CN',
-  base: '/my-docs/',
+  base: '/my-world/',
   cleanUrls: true,
   themeConfig: {
     logo: '/logo.svg',
@@ -32,7 +32,7 @@ export default defineConfig({
       ]
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/' }
+      { icon: 'github', link: 'https://github.com/liuyananx/my-world' }
     ],
     footer: {
       message: 'Built with VitePress',
@@ -43,3 +43,4 @@ export default defineConfig({
     }
   }
 })
+

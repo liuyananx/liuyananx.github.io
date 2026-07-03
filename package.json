@@ -1,5 +1,5 @@
 ﻿{
-  "name": "my-docs",
+  "name": "my-world",
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -12,3 +12,4 @@
     "vitepress": "^1.6.3"
   }
 }
+

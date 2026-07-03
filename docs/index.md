@@ -2,9 +2,9 @@
 layout: home
 
 hero:
-  name: My Docs
-  text: 我的个人文档库
-  tagline: 记录文章、笔记、教程和长期沉淀的知识。
+  name: My World
+  text: 我的个人空间
+  tagline: 记录文档、想法、作品和长期沉淀的内容。
   actions:
     - theme: brand
       text: 开始阅读
@@ -21,3 +21,4 @@ features:
   - title: 易部署
     details: 构建后可发布到 GitHub Pages、Netlify、Vercel 或任意静态托管服务。
 ---
+

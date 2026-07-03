@@ -1,6 +1,6 @@
-﻿# My Docs
+﻿# My World
 
-这是一个用于长期存放和发布个人文档的静态文档站项目，基于 VitePress，使用方式和 VuePress 很接近。
+这是一个用于长期存放和发布个人内容的静态站点项目，基于 VitePress，使用方式和 VuePress 很接近。
 
 ## 本地使用
 
@@ -39,3 +39,4 @@ git branch -M main
 git remote add origin <你的 GitHub 仓库地址>
 git push -u origin main
 ```
+
