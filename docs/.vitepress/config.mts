@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'My Docs',
   description: '我的个人文档库',
   lang: 'zh-CN',
+  base: '/my-docs/',
   cleanUrls: true,
   themeConfig: {
     logo: '/logo.svg',
