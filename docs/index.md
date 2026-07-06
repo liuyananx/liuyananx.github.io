@@ -10,14 +10,8 @@ hero:
     alt: lynx
   actions:
     - theme: brand
-      text: 写点东西
-      link: /admin
-    - theme: alt
-      text: 看随想
-      link: /thoughts
-    - theme: alt
-      text: 项目总结
-      link: /summaries
+      text: 写点儿东西
+      link: https://app.pagescms.org/
 ---
 
 <script setup>
