@@ -17,7 +17,7 @@ export default defineConfig({
       { text: '首页', link: '/' },
       { text: 'Now', link: '/now' },
       { text: 'Things', link: '/things' },
-      { text: 'Notes', link: '/notes/' },
+      { text: 'Notes', link: '/notes' },
       { text: 'Archive', link: '/archive' },
       { text: '关于', link: '/about' },
       { text: '链接', link: '/links' }
@@ -27,7 +27,7 @@ export default defineConfig({
         {
           text: '笔记',
           items: [
-            { text: '笔记目录', link: '/notes/' }
+            { text: '笔记目录', link: '/notes' }
           ]
         }
       ]
@@ -44,4 +44,5 @@ export default defineConfig({
     }
   }
 })
+
 
