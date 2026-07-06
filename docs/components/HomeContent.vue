@@ -17,27 +17,27 @@ const recentItems = computed(() => {
   <div class="home-content">
     <section class="home-panel">
       <div class="panel-title">
-        <span>入口</span>
-        <h2>现在主要就做两件事</h2>
+        <span>START</span>
+        <h2>想写什么</h2>
       </div>
 
       <div class="entry-grid">
         <a class="entry-card" href="/thoughts">
           <span>01</span>
           <h3>随想</h3>
-          <p>零散想法、状态、突然冒出来的念头。</p>
+          <p>几句话也行，先把当下的想法留下来。</p>
         </a>
 
         <a class="entry-card" href="/summaries">
           <span>02</span>
           <h3>项目总结</h3>
-          <p>复盘、踩坑、经验和阶段收获。</p>
+          <p>复盘项目、记录踩坑和阶段收获。</p>
         </a>
 
         <a class="entry-card" href="/admin">
           <span>03</span>
-          <h3>在线编辑</h3>
-          <p>用 Pages CMS 写内容，保存后自动更新。</p>
+          <h3>写作后台</h3>
+          <p>打开在线编辑器，新建或修改内容。</p>
         </a>
       </div>
     </section>

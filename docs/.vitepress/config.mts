@@ -23,11 +23,12 @@ export default defineConfig({
     logo: '/logo.svg',
     siteTitle: 'My World',
     nav: [
-      { text: '首页', link: '/' },
-      { text: '随想', link: '/thoughts' },
-      { text: '项目总结', link: '/summaries' },
-      { text: '关于', link: '/about' },
-      { text: '链接', link: '/links' }
+      { text: '首页', link: '/', activeMatch: '^/$' },
+      { text: '随想', link: '/thoughts', activeMatch: '^/thoughts(/|$)' },
+      { text: '项目总结', link: '/summaries', activeMatch: '^/summaries(/|$)' },
+      { text: '写作', link: '/admin', activeMatch: '^/admin(/|$)' },
+      { text: '关于', link: '/about', activeMatch: '^/about(/|$)' },
+      { text: '链接', link: '/links', activeMatch: '^/links(/|$)' }
     ],
     sidebar: {
       '/notes/': [

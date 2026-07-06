@@ -20,7 +20,35 @@
     radial-gradient(circle at 90% 10%, rgba(6, 182, 212, 0.12), transparent 28%);
 }
 
+.VPHomeHero .name {
+  font-size: clamp(44px, 6vw, 64px);
+}
+
+.VPHomeHero .text {
+  max-width: 720px;
+  font-size: clamp(34px, 4.8vw, 56px);
+  line-height: 1.1;
+}
+
+.VPHomeHero .tagline {
+  max-width: 620px;
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.7;
+}
+
+.VPHomeHero .image-container {
+  width: 280px;
+  height: 280px;
+}
+
+.VPHomeHero .image-bg {
+  width: 280px;
+  height: 280px;
+}
+
 .VPHomeHero .image-src {
+  width: 260px;
+  height: 260px;
   border-radius: 32px;
   box-shadow: 0 24px 80px rgba(79, 70, 229, 0.25);
 }
@@ -124,6 +152,17 @@
 }
 
 @media (max-width: 768px) {
+  .VPHomeHero .image-container,
+  .VPHomeHero .image-bg {
+    width: 220px;
+    height: 220px;
+  }
+
+  .VPHomeHero .image-src {
+    width: 204px;
+    height: 204px;
+  }
+
   .home-section {
     padding: 18px 24px 42px;
   }
