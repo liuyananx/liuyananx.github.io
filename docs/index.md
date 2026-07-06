@@ -3,30 +3,25 @@ layout: home
 
 hero:
   name: My World
-  text: 随手记录，慢慢变化
-  tagline: 写点随想，放些项目总结。先简单用着，之后再长成别的样子。
+  text: 欢迎来到我的世界
+  tagline: 这里先放随想和项目总结。不用太正式，能写就行。
   image:
     src: /avatar.svg
     alt: lynx
   actions:
     - theme: brand
+      text: 写点东西
+      link: https://app.pagescms.org/
+    - theme: alt
       text: 随想
       link: /thoughts
     - theme: alt
       text: 项目总结
       link: /summaries
-    - theme: alt
-      text: 关于
-      link: /about
-
-features:
-  - icon: 💭
-    title: 随想
-    details: 零散想法、阶段状态、突然冒出来的念头。
-  - icon: 🧾
-    title: 项目总结
-    details: 项目复盘、踩坑记录、工作方法和阶段收获。
-  - icon: ✍️
-    title: 在线编辑
-    details: 通过 Pages CMS 写内容，保存后自动更新网站。
 ---
+
+<script setup>
+import HomeContent from './components/HomeContent.vue'
+</script>
+
+<HomeContent />
