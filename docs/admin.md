@@ -10,18 +10,30 @@ head:
 
 # 写作后台
 
-这里是一个轻量在线编辑入口，用来写“随想”和“笔记”。
+这里先不做自研后台，改用更稳的在线 CMS。
 
-它会直接把 Markdown 文件提交到 GitHub 仓库，提交后 GitHub Pages 会自动部署。
+## 推荐入口
 
-::: warning
-请使用只授权当前仓库的 fine-grained GitHub Token。不要使用权限过大的长期 Token，也不要把 Token 发给别人。
-:::
+[打开 Pages CMS](https://app.pagescms.org/)
 
-<script setup>
-import AdminEditor from './components/AdminEditor.vue'
-</script>
+使用方式：
 
-<ClientOnly>
-  <AdminEditor />
-</ClientOnly>
+1. 用 GitHub 登录 Pages CMS。
+2. 选择仓库：`liuyananx/liuyananx.github.io`。
+3. 进入 `随想` 或 `笔记`。
+4. 新建内容，保存。
+5. GitHub Pages 会自动重新部署。
+
+## 为什么用这个
+
+- 不需要你手动粘贴 token。
+- 不需要把网站迁移到复杂后端。
+- 内容仍然是 Markdown 文件，继续保存在 GitHub 仓库里。
+- 以后不满意，还可以换成 Decap CMS、TinaCMS 或真正自研后台。
+
+## 内容位置
+
+```text
+docs/thoughts/  # 随想
+docs/notes/     # 笔记
+```

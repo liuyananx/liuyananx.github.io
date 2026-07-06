@@ -1,0 +1,75 @@
+media:
+  input: docs/public/uploads
+  output: /uploads
+
+content:
+  - name: thoughts
+    label: 随想
+    type: collection
+    path: docs/thoughts
+    exclude:
+      - index.md
+    view:
+      fields:
+        - title
+        - date
+    fields:
+      - name: title
+        label: 标题
+        type: string
+        required: true
+      - name: date
+        label: 日期
+        type: date
+      - name: body
+        label: 正文
+        type: rich-text
+
+  - name: notes
+    label: 笔记
+    type: collection
+    path: docs/notes
+    exclude:
+      - index.md
+    view:
+      fields:
+        - title
+        - date
+    fields:
+      - name: title
+        label: 标题
+        type: string
+        required: true
+      - name: date
+        label: 日期
+        type: date
+      - name: body
+        label: 正文
+        type: rich-text
+
+  - name: pages
+    label: 页面
+    type: file
+    path: docs
+    files:
+      - name: home
+        label: 首页
+        path: index.md
+        fields:
+          - name: body
+            label: 内容
+            type: rich-text
+      - name: about
+        label: 关于
+        path: about.md
+        fields:
+          - name: body
+            label: 内容
+            type: rich-text
+      - name: links
+        label: 链接
+        path: links.md
+        fields:
+          - name: body
+            label: 内容
+            type: rich-text
