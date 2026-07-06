@@ -10,6 +10,7 @@ export default defineConfig({
     '/admin',
     '/notes',
     '/thoughts',
+    '/summaries',
     '/things',
     '/archive',
     '/now'
@@ -24,6 +25,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '随想', link: '/thoughts' },
+      { text: '项目总结', link: '/summaries' },
       { text: '关于', link: '/about' },
       { text: '链接', link: '/links' }
     ],
@@ -41,6 +43,14 @@ export default defineConfig({
           text: '随想',
           items: [
             { text: '随想目录', link: '/thoughts' }
+          ]
+        }
+      ],
+      '/summaries/': [
+        {
+          text: '项目总结',
+          items: [
+            { text: '项目总结目录', link: '/summaries' }
           ]
         }
       ]

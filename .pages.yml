@@ -47,6 +47,35 @@ content:
         label: 正文
         type: rich-text
 
+  - name: summaries
+    label: 项目总结
+    type: collection
+    path: docs/summaries
+    exclude:
+      - index.md
+    view:
+      fields:
+        - title
+        - date
+        - project
+    fields:
+      - name: title
+        label: 标题
+        type: string
+        required: true
+      - name: date
+        label: 日期
+        type: date
+      - name: project
+        label: 项目名称
+        type: string
+      - name: role
+        label: 我的角色
+        type: string
+      - name: body
+        label: 正文
+        type: rich-text
+
   - name: pages
     label: 页面
     type: file

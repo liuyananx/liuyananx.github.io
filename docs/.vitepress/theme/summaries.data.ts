@@ -1,23 +1,17 @@
 import { createContentLoader } from 'vitepress'
+import type { ThoughtItem } from './thoughts.data'
 
-export interface ThoughtItem {
-  title: string
-  url: string
-  date: string
-  excerpt: string
-  project?: string
-  role?: string
-}
-
-export default createContentLoader('thoughts/*.md', {
+export default createContentLoader('summaries/*.md', {
   excerpt: true,
   transform(raw): ThoughtItem[] {
     return raw
-      .filter((item) => !item.url.endsWith('/thoughts/'))
+      .filter((item) => !item.url.endsWith('/summaries/'))
       .map((item) => ({
         title: item.frontmatter.title || '未命名',
         url: item.url,
         date: formatDate(item.frontmatter.date),
+        project: item.frontmatter.project || '',
+        role: item.frontmatter.role || '',
         excerpt: item.excerpt || ''
       }))
       .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
