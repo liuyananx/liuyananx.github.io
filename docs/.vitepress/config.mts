@@ -6,6 +6,13 @@ export default defineConfig({
   lang: 'zh-CN',
   base: '/',
   cleanUrls: true,
+  ignoreDeadLinks: [
+    '/notes',
+    '/thoughts',
+    '/things',
+    '/archive',
+    '/now'
+  ],
   head: [
     ['link', { rel: 'icon', href: '/logo.svg' }],
     ['meta', { name: 'theme-color', content: '#6366f1' }]
