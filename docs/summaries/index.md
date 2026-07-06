@@ -4,10 +4,6 @@
 
 它不一定要写得很正式，重点是把做过什么、怎么做的、有什么收获留下来。
 
-[打开在线编辑器](https://app.pagescms.org/)
-
-登录 GitHub 后选择仓库 `liuyananx/liuyananx.github.io`，进入“项目总结”即可新建内容。
-
 ## 可以怎么写
 
 ```md

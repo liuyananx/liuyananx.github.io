@@ -24,8 +24,8 @@ export default defineConfig({
     siteTitle: 'My World',
     nav: [
       { text: '首页', link: '/', activeMatch: '^/$' },
-      { text: '随想', link: '/thoughts', activeMatch: '^/thoughts(/|$)' },
-      { text: '项目总结', link: '/summaries', activeMatch: '^/summaries(/|$)' },
+      { text: '随想', link: '/thoughts/', activeMatch: '^/thoughts(/|$)' },
+      { text: '项目总结', link: '/summaries/', activeMatch: '^/summaries(/|$)' },
       { text: '关于', link: '/about', activeMatch: '^/about(/|$)' },
       { text: '链接', link: '/links', activeMatch: '^/links(/|$)' }
     ],
@@ -42,7 +42,7 @@ export default defineConfig({
         {
           text: '随想',
           items: [
-            { text: '随想目录', link: '/thoughts' }
+            { text: '随想目录', link: '/thoughts/' }
           ]
         }
       ],
@@ -50,7 +50,7 @@ export default defineConfig({
         {
           text: '项目总结',
           items: [
-            { text: '项目总结目录', link: '/summaries' }
+            { text: '项目总结目录', link: '/summaries/' }
           ]
         }
       ]

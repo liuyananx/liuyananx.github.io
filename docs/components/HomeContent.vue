@@ -22,13 +22,13 @@ const recentItems = computed(() => {
       </div>
 
       <div class="entry-grid">
-        <a class="entry-card" href="/thoughts">
+        <a class="entry-card" href="/thoughts/">
           <span>01</span>
           <h3>随想</h3>
           <p>零散想法、日常状态，先放在这里。</p>
         </a>
 
-        <a class="entry-card" href="/summaries">
+        <a class="entry-card" href="/summaries/">
           <span>02</span>
           <h3>项目总结</h3>
           <p>复盘项目，记录过程、问题和收获。</p>
