@@ -17,8 +17,8 @@ const recentItems = computed(() => {
   <div class="home-content">
     <section class="home-panel">
       <div class="panel-title">
-        <span>导航</span>
-        <h2>去对应模块</h2>
+        <span>入口</span>
+        <h2>内容入口</h2>
       </div>
 
       <div class="entry-grid">
@@ -32,18 +32,6 @@ const recentItems = computed(() => {
           <span>02</span>
           <h3>项目总结</h3>
           <p>复盘项目，记录过程、问题和收获。</p>
-        </a>
-
-        <a class="entry-card" href="/about">
-          <span>03</span>
-          <h3>关于</h3>
-          <p>放一些关于我和这个空间的说明。</p>
-        </a>
-
-        <a class="entry-card" href="/links">
-          <span>04</span>
-          <h3>链接</h3>
-          <p>常用入口、朋友网站或值得保存的地方。</p>
         </a>
       </div>
     </section>
@@ -97,7 +85,7 @@ const recentItems = computed(() => {
 
 .entry-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -180,12 +168,6 @@ const recentItems = computed(() => {
 .empty-text {
   margin: 0;
   padding: 18px 20px;
-}
-
-@media (max-width: 960px) {
-  .entry-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 640px) {
