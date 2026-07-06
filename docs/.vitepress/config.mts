@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   title: 'My World',
-  description: '我的个人空间',
+  description: '欢迎来到我的世界',
   lang: 'zh-CN',
   base: '/',
   cleanUrls: true,
@@ -59,7 +59,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/liuyananx/liuyananx.github.io' }
     ],
     footer: {
-      message: '一个不断变化的个人空间。',
+      message: '欢迎来到我的世界。',
       copyright: 'Copyright © 2026-present'
     },
     search: {
@@ -67,5 +67,6 @@ export default defineConfig({
     }
   }
 })
+
 
 
