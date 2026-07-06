@@ -17,27 +17,33 @@ const recentItems = computed(() => {
   <div class="home-content">
     <section class="home-panel">
       <div class="panel-title">
-        <span>START</span>
-        <h2>想写什么</h2>
+        <span>导航</span>
+        <h2>去对应模块</h2>
       </div>
 
       <div class="entry-grid">
         <a class="entry-card" href="/thoughts">
           <span>01</span>
           <h3>随想</h3>
-          <p>几句话也行，先把当下的想法留下来。</p>
+          <p>零散想法、日常状态，先放在这里。</p>
         </a>
 
         <a class="entry-card" href="/summaries">
           <span>02</span>
           <h3>项目总结</h3>
-          <p>复盘项目、记录踩坑和阶段收获。</p>
+          <p>复盘项目，记录过程、问题和收获。</p>
         </a>
 
-        <a class="entry-card" href="/admin">
+        <a class="entry-card" href="/about">
           <span>03</span>
-          <h3>写作后台</h3>
-          <p>打开在线编辑器，新建或修改内容。</p>
+          <h3>关于</h3>
+          <p>放一些关于我和这个空间的说明。</p>
+        </a>
+
+        <a class="entry-card" href="/links">
+          <span>04</span>
+          <h3>链接</h3>
+          <p>常用入口、朋友网站或值得保存的地方。</p>
         </a>
       </div>
     </section>
@@ -91,7 +97,7 @@ const recentItems = computed(() => {
 
 .entry-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
 }
 
@@ -176,7 +182,13 @@ const recentItems = computed(() => {
   padding: 18px 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
+  .entry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
   .entry-grid {
     grid-template-columns: 1fr;
   }
