@@ -36,4 +36,6 @@ docs/thoughts/2026-07-06-random.md
 
 ## 随想列表
 
+<!-- entries:start -->
 暂时还没有正式内容。下一次想到什么，可以先写在这里。
+<!-- entries:end -->

@@ -7,6 +7,7 @@ export default defineConfig({
   base: '/',
   cleanUrls: true,
   ignoreDeadLinks: [
+    '/admin',
     '/notes',
     '/thoughts',
     '/things',
@@ -28,7 +29,8 @@ export default defineConfig({
       { text: '随想', link: '/thoughts' },
       { text: '归档', link: '/archive' },
       { text: '关于', link: '/about' },
-      { text: '链接', link: '/links' }
+      { text: '链接', link: '/links' },
+      { text: '写作', link: '/admin' }
     ],
     sidebar: {
       '/notes/': [
