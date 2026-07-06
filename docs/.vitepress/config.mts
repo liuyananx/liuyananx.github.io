@@ -15,10 +15,11 @@ export default defineConfig({
     siteTitle: 'My World',
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Now', link: '/now' },
-      { text: 'Things', link: '/things' },
-      { text: 'Notes', link: '/notes' },
-      { text: 'Archive', link: '/archive' },
+      { text: '近况', link: '/now' },
+      { text: '东西', link: '/things' },
+      { text: '笔记', link: '/notes' },
+      { text: '随想', link: '/thoughts' },
+      { text: '归档', link: '/archive' },
       { text: '关于', link: '/about' },
       { text: '链接', link: '/links' }
     ],
@@ -28,6 +29,14 @@ export default defineConfig({
           text: '笔记',
           items: [
             { text: '笔记目录', link: '/notes' }
+          ]
+        }
+      ],
+      '/thoughts/': [
+        {
+          text: '随想',
+          items: [
+            { text: '随想目录', link: '/thoughts' }
           ]
         }
       ]

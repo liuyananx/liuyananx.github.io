@@ -13,7 +13,7 @@ hero:
       text: 我最近在做什么
       link: /now
     - theme: alt
-      text: 看看 Things
+      text: 看看东西
       link: /things
     - theme: alt
       text: GitHub
@@ -27,8 +27,8 @@ features:
     title: 收集 Things
     details: 做过的项目、喜欢的东西、想尝试的方向，都先放进这个容器里。
   - icon: ✍️
-    title: 允许变化
-    details: 现在的想法以后可能会变，记录本身就是看见变化的一种方式。
+    title: 写点随想
+    details: 不成体系的念头也可以先留下来，记录本身就是看见变化的一种方式。
 ---
 
 <div class="home-section">
@@ -37,18 +37,18 @@ features:
   <div class="home-grid">
     <a class="home-card" href="/now">
       <span>01</span>
-      <h3>Now</h3>
+      <h3>近况</h3>
       <p>记录这一阶段正在做、正在想、正在体验的事情。</p>
     </a>
     <a class="home-card" href="/things">
       <span>02</span>
-      <h3>Things</h3>
+      <h3>东西</h3>
       <p>项目、工具、兴趣、作品、收藏，都可以放在这里。</p>
     </a>
-    <a class="home-card" href="/archive">
+    <a class="home-card" href="/thoughts">
       <span>03</span>
-      <h3>Archive</h3>
-      <p>把过去阶段留下来，不要求它永远代表现在的自己。</p>
+      <h3>随想</h3>
+      <p>不想写成长文章的时候，就先写一点零散想法。</p>
     </a>
   </div>
 </div>
