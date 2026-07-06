@@ -1,4 +1,51 @@
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
+import { basename, dirname, resolve } from 'node:path'
+import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vitepress'
+import type { DefaultTheme } from 'vitepress'
+
+const docsRoot = resolve(dirname(fileURLToPath(import.meta.url)), '..')
+
+function getFrontmatterValue(content: string, key: string) {
+  const frontmatter = content.match(/^---\n([\s\S]*?)\n---/)
+  if (!frontmatter) return ''
+
+  const line = frontmatter[1]
+    .split('\n')
+    .find((item) => item.startsWith(`${key}:`))
+
+  return line?.replace(`${key}:`, '').trim().replace(/^['"]|['"]$/g, '') || ''
+}
+
+function createContentSidebar(section: string, title: string, indexText: string): DefaultTheme.SidebarItem[] {
+  const dir = resolve(docsRoot, section)
+  const items = existsSync(dir)
+    ? readdirSync(dir)
+        .filter((file) => file.endsWith('.md') && file !== 'index.md')
+        .map((file) => {
+          const content = readFileSync(resolve(dir, file), 'utf-8')
+          const slug = basename(file, '.md')
+
+          return {
+            text: getFrontmatterValue(content, 'title') || slug,
+            link: `/${section}/${slug}`,
+            date: getFrontmatterValue(content, 'date')
+          }
+        })
+        .sort((a, b) => (b.date || '').localeCompare(a.date || '') || a.text.localeCompare(b.text, 'zh-CN'))
+        .map(({ text, link }) => ({ text, link }))
+    : []
+
+  return [
+    {
+      text: title,
+      items: [
+        { text: indexText, link: `/${section}/` },
+        ...items
+      ]
+    }
+  ]
+}
 
 export default defineConfig({
   title: 'My World',
@@ -38,22 +85,8 @@ export default defineConfig({
           ]
         }
       ],
-      '/thoughts/': [
-        {
-          text: '随想',
-          items: [
-            { text: '随想目录', link: '/thoughts/' }
-          ]
-        }
-      ],
-      '/summaries/': [
-        {
-          text: '项目总结',
-          items: [
-            { text: '项目总结目录', link: '/summaries/' }
-          ]
-        }
-      ]
+      '/thoughts/': createContentSidebar('thoughts', '随想', '全部随想'),
+      '/summaries/': createContentSidebar('summaries', '项目总结', '全部项目总结')
     },
     socialLinks: [
       { icon: 'github', link: 'https://github.com/liuyananx/liuyananx.github.io' }
