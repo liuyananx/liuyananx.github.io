@@ -1,0 +1,14 @@
+name: 写一条随想
+description: 发布一条会显示在个人网站上的随想
+title: "随想："
+labels:
+  - thought
+body:
+  - type: textarea
+    id: thought
+    attributes:
+      label: 随想内容
+      description: 想写什么就写什么，不用太正式。
+      placeholder: 今天突然想到……
+    validations:
+      required: true

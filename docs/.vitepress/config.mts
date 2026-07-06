@@ -23,14 +23,9 @@ export default defineConfig({
     siteTitle: 'My World',
     nav: [
       { text: '首页', link: '/' },
-      { text: '近况', link: '/now' },
-      { text: '东西', link: '/things' },
-      { text: '笔记', link: '/notes' },
       { text: '随想', link: '/thoughts' },
-      { text: '归档', link: '/archive' },
       { text: '关于', link: '/about' },
-      { text: '链接', link: '/links' },
-      { text: '写作', link: '/admin' }
+      { text: '链接', link: '/links' }
     ],
     sidebar: {
       '/notes/': [

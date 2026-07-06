@@ -104,6 +104,25 @@
   border-top: 1px solid var(--vp-c-divider);
 }
 
+.write-thought-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 18px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--vp-c-brand-1), var(--vp-c-brand-2));
+  box-shadow: 0 12px 28px rgba(99, 102, 241, 0.24);
+}
+
+.write-thought-button:hover {
+  color: white;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
 @media (max-width: 768px) {
   .home-section {
     padding: 18px 24px 42px;

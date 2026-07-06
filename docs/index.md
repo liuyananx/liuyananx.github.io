@@ -10,45 +10,45 @@ hero:
     alt: lynx
   actions:
     - theme: brand
-      text: 我最近在做什么
-      link: /now
+      text: 写点随想
+      link: /thoughts
     - theme: alt
-      text: 看看东西
-      link: /things
+      text: 关于这里
+      link: /about
     - theme: alt
       text: GitHub
       link: https://github.com/liuyananx
 
 features:
   - icon: 🧭
-    title: 不固定主题
-    details: 工作、生活、兴趣、想法都可以出现，不必被某个身份或栏目框住。
+    title: 简单一点
+    details: 暂时不做太多栏目，先保留首页、随想、关于和链接。
   - icon: 🧩
-    title: 收集 Things
-    details: 做过的项目、喜欢的东西、想尝试的方向，都先放进这个容器里。
+    title: 随手记录
+    details: 想到什么就先写一条，不要求完整，也不用先想好分类。
   - icon: ✍️
-    title: 写点随想
-    details: 不成体系的念头也可以先留下来，记录本身就是看见变化的一种方式。
+    title: 允许变化
+    details: 内容以后可以增加，也可以删减；网站先跟着你当前的感觉走。
 ---
 
 <div class="home-section">
   <p class="eyebrow">NOW</p>
-  <h2>先不把它做成简历，也不把它做成固定博客</h2>
+  <h2>先从随想开始</h2>
   <div class="home-grid">
-    <a class="home-card" href="/now">
-      <span>01</span>
-      <h3>近况</h3>
-      <p>记录这一阶段正在做、正在想、正在体验的事情。</p>
-    </a>
-    <a class="home-card" href="/things">
-      <span>02</span>
-      <h3>东西</h3>
-      <p>项目、工具、兴趣、作品、收藏，都可以放在这里。</p>
-    </a>
     <a class="home-card" href="/thoughts">
+      <span>01</span>
+      <h3>写一条</h3>
+      <p>不用进入复杂后台，登录 GitHub 后像发帖子一样写。</p>
+    </a>
+    <a class="home-card" href="/about">
+      <span>02</span>
+      <h3>慢慢变化</h3>
+      <p>现在不用急着整理很多对象，等内容自然多起来再分类。</p>
+    </a>
+    <a class="home-card" href="/links">
       <span>03</span>
-      <h3>随想</h3>
-      <p>不想写成长文章的时候，就先写一点零散想法。</p>
+      <h3>保持轻量</h3>
+      <p>先让它像一个入口，而不是一套复杂系统。</p>
     </a>
   </div>
 </div>
